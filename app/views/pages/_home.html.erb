@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+
+<% else %>
+
+	<div class="hero-unit">
+		<h1>Welcome to Matt &amp; Kate's online photo album!</h1>
+		<p>
+			Admittedly it's a bit self-indulgent...
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+
+<% end %>
